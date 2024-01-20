@@ -1,0 +1,819 @@
+/* -------------------------------------------------------------- */
+/* ----------------------HERO SECTION----------------------- -----*/
+/* -------------------------------------------------------------- */
+
+
+.nav-links .icon {
+    display: none;
+  }
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+}
+
+
+.slogan-hero a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: right;
+    
+}
+
+.logo-container img{
+    width:20%;
+}
+
+.hero-container{
+    height:100vh;
+}
+
+.hero{
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+
+    background-image: url("../assets/photos/sushi5.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center top 10%;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.nav-part {
+    flex: 1;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-links{
+    font-size: clamp(1rem, 0.9583rem + 0.1389vw, 1.125rem);
+    line-height: 2rem;
+}
+
+.logo-container{
+    flex:1;
+
+    height: 50px;
+    background-image: url("../assets/photos/logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slogan-hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.slogan-hero p{
+    margin:0;
+}
+
+.slogan-hero span{
+    font-weight: bold;
+}
+
+.button-reservation{
+    background-color: #94680050;
+    border:1px solid #9468006c;
+    border-radius: 3.5px;
+    padding:15px 30px;
+    transition: all 1s ease 0s;
+}
+
+.slogan-hero p{
+    font-size: clamp(1.5625rem, 1.0417rem + 1.7361vw, 3.125rem);
+    margin-bottom:20px;
+}
+
+.button-reservation:hover{
+    cursor: pointer;
+    border-color: var(--yellow);
+    background-color: #9468006c;
+}
+
+.nav-links a:hover{
+    transition: 0.3s;
+    color: rgb(253, 253, 239);
+    text-decoration: underline;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------INTTRODuCTION----------------------- ----*/
+/* -------------------------------------------------------------- */
+
+.introduction-container{
+    width:100%;
+    height:100vh;
+}
+
+.introduction{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.introduction-part{
+    flex:1;
+}
+
+.introduction-part:first-child{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.introduction-part:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    margin-bottom:10px;
+}
+
+.introduction-part:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:10px;
+}
+
+.introduction-part:first-child h1, .introduction-part:first-child p{
+    padding: 0 80px;
+}
+
+.introduction-part:first-child span{
+    font-weight: 600;
+}
+
+.introduction-image{
+    height:100%;
+    background-image: url("../assets/photos/knife2.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.introduction-part:first-child p.japanese,
+.introduction-part-legacy:first-child p.japanese,
+.membership-part:nth-child(2) p.japanese {
+    margin-top:-10px;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------LEGACY----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+
+.legacy-container{
+    width:100%;
+    height:100vh;
+}
+
+.introduction-legacy{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.introduction-part-legacy{
+    flex:1;
+}
+
+.introduction-part-legacy:first-child{
+    order:1;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.introduction-part-legacy:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:10px;
+}
+
+.introduction-part-legacy:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.introduction-part-legacy:first-child h1, .introduction-part-legacy:first-child p{
+    padding: 0 80px;
+}
+
+.introduction-part-legacy:first-child span{
+    font-weight: 600;
+}
+
+.introduction-image-legacy{
+    height:100%;
+
+    background-image: url("../assets/photos/sushi-legacy.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------QUOTE----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.quote-container{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+}
+
+.quote-img{
+    height:100%;
+
+    background-image: url("../assets/photos/3661.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-quote{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.text-quote p {
+    text-align: center;
+}
+
+.text-quote p:first-child {
+    font-style: italic;
+}
+
+.text-quote p:last-child {
+    font-weight: 600;
+}
+
+.quote-img p{
+    font-size: clamp(1.25rem, 1.1667rem + 0.2778vw, 1.5rem);
+    
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------EVENTS----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.events-container{
+    width: 100%;
+    height: 70vh;
+}
+
+.events{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.event-photo1,
+.event-photo2,
+.event-part{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-photo1{
+    background-image: url("../assets/photos/3711.jpg");
+    background-color: black;
+
+    height: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.event-photo2{
+    background-image: url("../assets/photos/3633.jpg");
+    background-color: black;
+
+    height: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.event-part {
+    box-sizing: border-box;
+}
+
+.event-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.event-text span {
+    font-weight: 600;
+}
+
+.event-text h1 {
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    color: var(--yellow);
+    margin: 0;
+}
+
+.event-text p {
+    font-size: var(--normalSize);
+    font-weight: 300;
+}
+
+
+/* sake */
+
+.sake-container{
+    width:100%;
+    /* height:70vh; */
+}
+
+.sake{
+    height:100%;
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+.sake-part{
+    flex:1;
+}
+
+.sake-event{
+    background-image: url("../assets/photos/3671.jpg");
+    background-color: black;
+
+    height: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.sake-text-container{
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column nowrap;
+}
+.sake-title{
+    background-color: var(--yellow);
+    color:black;
+
+    flex:1;
+    width:100%;
+}
+
+.sake-title h1{
+    text-transform: uppercase;
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    text-align: center;
+}
+
+.sake-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.sake-text {
+    text-align: right;
+    font-size: var(--normalSize);
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 80px;
+}
+
+.sake-text span {
+    font-weight: 600;
+}
+
+/* second event */
+
+.second-event-container{
+    width:100%;
+    /* height:70vh; */
+}
+
+.second-event{
+    height:100%;
+    display:flex;
+    flex-flow: row nowrap;
+}
+
+.second-event-part{
+    flex:1;
+}
+
+.second-event-photo{
+    background-image: url("../assets/photos/events.png");
+    background-color: black;
+
+    height: 100%; 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.second-event-text-container{
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column nowrap;
+}
+.second-event-title{
+    background-color: var(--yellow);
+    color:black;
+
+    flex:1;
+    width:100%;
+}
+
+.second-event-title h1{
+    text-transform: uppercase;
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    text-align: center;
+}
+
+.second-event-text-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    box-sizing: border-box;
+}
+
+.second-event-text {
+    font-size: var(--normalSize);
+    font-weight: 300;
+    box-sizing: border-box;
+    padding: 80px;
+}
+
+.second-event-text span {
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------MEMBERSHIP----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.membership-container{
+    width:100%;
+    height:60vh;
+
+    margin-bottom:200px;
+}
+
+.membership{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.membership-part{
+    flex:1;
+}
+
+.membership-part{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    text-align: right;
+}
+
+.membership-part h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:10px;
+}
+
+.membership-part p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.membership-part h1, .membership-part p{
+    padding: 0 80px;
+}
+
+.membership-part span{
+    font-weight: 600;
+}
+
+.image-membership{
+    height:100%;
+
+    background-image: url("../assets/photos/960x0.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------RESTAURANT PHOTO-------------------- ----*/
+/* -------------------------------------------------------------- */
+
+.restaurant-photo-container{
+    margin:80px 0;
+    height:100vh;
+    width:100%;
+}
+
+.restaurant-photo{
+    height:100%;
+
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: url("../assets/photos/restauranthomePage.jpg");
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant-photo-part{
+    flex: 1 0 80%;
+}
+
+.restaurant-photo-text{
+    background-color: white;
+    color:black;
+    padding:80px;
+}
+
+.restaurant-photo-text p{
+    margin:0;
+    margin-top:10px;
+    font-size: var(--normalSize);
+}
+
+.restaurant-photo h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    margin:0;
+}
+
+.restaurant-photo-text span{
+    font-weight: 600;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------MEDIA QUERIES----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+@media screen and (max-width: 1110px) {
+
+    .introduction-legacy{
+        flex-flow: column;
+        margin-bottom:-200px;
+    }
+
+    .introduction-part-legacy:last-child{
+        order:2;
+    }
+
+    .text-quote {
+        padding-top: 100px;
+    }
+
+
+    .legacy-container{
+        height:50vh;
+        margin-top:77px;
+    }
+
+    .introduction-image-legacy{
+        display:none;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+
+    .membership{
+        flex-flow: column;
+        margin:80px 0;
+    }
+
+    .membership-part:first-child{
+        order:2;
+    }
+
+    .membership-part:nth-child(2){
+        text-align: left;
+    }
+
+    .image-membership {
+        height: 40vh;
+
+        background-color: black;
+        background-size: contain;
+    }
+
+    .text-quote{
+        margin-top:80px;
+    }
+    
+}
+
+@media screen and (max-width: 870px) {
+
+    .introduction{
+        flex-flow: column;
+    }
+
+    .events{
+        flex-flow: column;
+        height:60vh;
+    }
+
+    .event-photo1{
+        height:40vh;
+        background-position: center center;
+    }
+
+    .introduction-part:first-child {
+        padding:30px 0;
+    }
+
+    .membership{
+        margin-top:80px;
+    }
+
+    .event-part:first-child{
+        order:1;
+    }
+
+    .event-text-container{
+        height:40vh;
+    }
+
+    .sake-container {
+        margin-top: 75px;
+    }
+    
+    .sake{
+        margin-top: -10px;
+    }
+    
+}
+
+
+@media screen and (max-width: 650px){
+    .sake, .second-event{
+        flex-flow: column;
+        height:110vh;
+        text-align: center;
+    }
+
+    .sake-text{
+        text-align: center;
+    }
+
+    .sake-part:first-child{
+        order:1;
+    }
+
+}
+
+@media screen and (max-width: 533px){
+
+    .restaurant-photo-container {
+        height: 120vh;
+    }
+    
+}
+
+@media screen and (max-width: 482px){
+    .membership-part h1 {
+        white-space: wrap;
+    }
+
+    .introduction-part-legacy:first-child h1 {
+        white-space: wrap;
+    }
+
+    .membership-container {
+        margin-bottom: 280px;
+    }
+}
+
+@media screen and (max-width: 430px){
+ 
+    .text-quote {
+        margin-top: 160px;
+    }
+}
+
+
+@media screen and (max-width: 416px){
+
+    .restaurant-photo-container {
+        height: 160vh;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+
+    .introduction-container {
+        height: 150vh;
+    }
+    
+}
+
+
+@media screen and (max-width: 380px){
+
+    .legacy-container {
+        height: 65vh;
+    }
+
+    .quote-container {
+        margin-bottom: 80px;
+    }
+
+    .event-text-container {
+        height: 50vh;
+    }
+
+    .sake-container {
+        margin-top: 117px;
+    }
+
+    .membership-container {
+        margin-bottom: 335px;
+    }
+
+}

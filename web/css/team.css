@@ -1,0 +1,884 @@
+/* -------------------------------------------------------------- */
+/* ----------------------HERO SECTION----------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+}
+
+
+.slogan-hero a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: right;
+    
+}
+
+.nav-links li:nth-child(2){
+    font-weight: 600;
+    
+}
+
+.logo-container img{
+    width:20%;
+}
+
+.hero-container{
+    height:100vh;
+}
+
+.hero{
+    box-sizing: border-box;
+    width:100%;
+    height:70%;
+
+
+    background-image: url("../assets/photos/26105.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.nav-part {
+    flex: 1;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-links{
+    font-size: clamp(1rem, 0.9583rem + 0.1389vw, 1.125rem);
+    line-height: 2rem;
+}
+
+.logo-container{
+    flex:1;
+
+    height: 50px;
+    background-image: url("../assets/photos/logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-hero{
+    height:30%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin-bottom: -70px;
+    margin-left: -40px;
+}
+
+.texts P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-left:90px;
+}
+
+.button-reservation:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #9468006c;
+}
+
+.nav-links a:hover{
+    transition: 0.3s;
+    color: rgb(253, 253, 239);
+    text-decoration: underline;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------CHEF----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.chef-container{
+    width:100%;
+    height:80vh;
+}
+
+.chef{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.chef-part{
+    flex:1;
+}
+
+.chef-part:first-child{
+    order:1;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.chef-part:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:-15px;
+}
+
+.chef-part:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.chef-part:first-child h1, .chef-part:first-child p{
+    padding: 0 80px;
+}
+
+.chef-part:first-child span{
+    font-weight: 600;
+}
+
+.chef-image{
+    height:100%;
+
+    background-image: url("../assets/photos/chef.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------TEAM----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.team{
+    height:150vh;
+    width:100%;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+}
+
+.person-social-media{
+    display:flex;
+}
+
+.facebook-team img, .instagram-team img, .x-team img {
+    max-width: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: all 1s ease 0s;
+}
+
+.facebook-team img:hover, .instagram-team img:hover, .x-team img:hover{
+    transform: rotate(50deg);
+}
+
+.person-text{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-top:20px;
+}
+
+.person-text p{
+    line-height:0.1rem;
+    box-sizing: border-box;
+    margin:10px;
+}
+
+.person-text p:first-child{
+    font-weight: 600;
+    font-size: var(--normalSize);
+}
+
+.people-in-team {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.person-container {
+    height: 40%;
+    min-width: calc(33.33%); 
+    flex: 0 0 calc(33.33% - 2px);
+    box-sizing: border-box; 
+}
+
+.person-photo:first-child{
+    height:100%;
+    width:80%;
+
+    background-image: url("../assets/photos/manager.png");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.person-photo{
+    height:100%;
+    width:80%;
+
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.person-container:nth-child(1) .person-photo {
+    background-image: url("../assets/photos/manager.png");
+}
+
+.person-container:nth-child(2) .person-photo {
+    background-image: url("../assets/photos/pong.png");
+}
+
+.person-container:nth-child(3) .person-photo {
+    background-image: url("../assets/photos/pui.png");
+}
+
+.person-container:nth-child(4) .person-photo {
+    background-image: url("../assets/photos/chino.png");
+}
+
+.person-container:nth-child(5) .person-photo {
+    background-image: url("../assets/photos/orochimaru.png");
+}
+
+.person-container:nth-child(6) .person-photo {
+    background-image: url("../assets/photos/choji.png");
+}
+
+.team h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    color:var(--yellow);
+
+    margin:80px 50px;
+    text-transform: uppercase;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------AWARDS----------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.awards-container{
+    height:100vh;
+    width:100%;
+}
+
+.awards{
+    height: 100%;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.michelin::after, .tripadvisor::after{
+    content: "";
+    position: absolute;
+    width: 2px; 
+    right:-40px;
+    height: 100%; 
+    background-color: var(--yellow);
+}
+
+.tripadvisor::before{
+    content: "";
+    position: absolute;
+    top: -25px;
+    right:40px;
+    width: 80%;
+    height: 2px; 
+    background-color: var(--yellow);  
+}
+
+.best::before, .tripadvisor::before{
+    content: "";
+    position: absolute;
+    top: -25px;
+    right:25px;
+    width: 80%;
+    height: 2px; 
+    background-color: var(--yellow); 
+}
+
+
+.michelin::before {
+    left: 0;
+}
+
+.tripadvisor::before {
+    right: 0;
+}
+
+
+.awards-part{
+    height:100%;
+    flex:1;
+    box-sizing: border-box;
+}
+
+.awards-part:first-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-awards p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin-bottom: -70px;
+    margin-left: -40px;
+}
+
+.text-awards p:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-left:90px;
+}
+
+.awards-part:last-child{
+    width: 100%;
+    height:100%;
+    flex: 1;
+}
+
+.michelin, .fifty, .tripadvisor, .best{
+    width:200px;
+    height:200px;
+
+    margin:20px;
+    flex:1;
+    position: relative;
+}
+
+.michelin{
+    /* height:100%; */
+    width:100%;
+
+    background-image: url("../assets/photos/michelin.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+.row-1{
+    display:flex;
+}
+
+.row-2{
+    display:flex;
+}
+
+.fifty{
+    width:100%;
+
+    background-image: url("../assets/photos/50.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.tripadvisor{
+    width:100%;
+
+    background-image: url("../assets/photos/tripadvisor.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.best{
+    width:100%;
+
+    background-image: url("../assets/photos/yam.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.awards-icons{
+    width:100%;
+    box-sizing: border-box;
+    margin-top: 100px;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------CLIENTS OPINION-------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.clients-opinion-container{
+    height:80vh;
+    width:100%
+}
+
+.clients-opinion{
+    height:100%;
+    box-sizing: border-box;
+
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.clients-opinion-part{
+    flex:1;
+    height:100%;
+}
+
+.clients-opinion-part:last-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+}
+
+.opinion-image{
+    height:100%;
+
+    background-image: url("../assets/photos/restaurant3.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.clients-title{
+    height:30%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts-clients p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin:0px;
+}
+
+.texts-clients P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-top:0px;
+    margin-bottom:-10px;
+    margin-left:350px;
+}
+
+.description-opinion-client{
+    padding:0 80px;
+}
+
+.stars-container{
+    min-height:10%;
+    width:20%;
+}
+
+.stars{
+    height:100%;
+
+    background-image: url("../assets/photos/5stars.png");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.dots-slider{
+    height:10%;
+    width:10%;
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot{
+    width: 8px; 
+    height: 8px;
+    border-radius: 50%; 
+    background-color: #808080;
+    margin:4px;
+}
+
+.dot:nth-child(2){
+    background-color:white;
+}
+
+.dot:hover{
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------CHEF'S QUOTE-------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.chef-quote-container{
+    height:100vh;
+    width:100%;
+    margin:80px 0;
+}
+
+.chef-quote{
+    height:100%;
+
+    background-image: url("../assets/photos/hot-sushi-rolls.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.chef-quote-text{
+    display:flex;
+}
+
+.left{
+    margin-left:80px;
+    flex:1;
+}
+
+.right{
+    flex:1;
+    text-align: center;
+    margin-right:80px;
+}
+
+.right p:first-child{
+    font-style: italic;
+}
+
+.right p:first-child{
+    margin-top:90px;
+    font-size: clamp(0.875rem, 0.8333rem + 0.1389vw, 1rem);
+}
+
+.left{
+    margin-top:80px;
+}
+
+.left p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin:0px;
+}
+
+.left P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-top:0px;
+    margin-left:20px;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------GROUP PHOTO------------------------------*/
+/* -------------------------------------------------------------- */
+
+.group-photo-container{
+    height:75vh;
+    width:100%;
+    margin-bottom: 300px;
+}
+
+.group-text{
+    background-color: white;
+    color:black;
+    padding:40px 0;
+}
+
+.group-text  h1, .group-text p{
+    text-align: center;
+    margin:0;
+}
+
+.group-text p{
+    font-size: var(--normalSize);
+}
+
+.group-text h1{
+    font-size: var(--sizeTitle);
+    text-transform: uppercase;
+}
+
+
+.group-photo{
+    height: 100%;
+    background-color: black;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../assets/photos/chef2.jpg");
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------MEDIA QUERIES---------------------- -----*/
+/* -------------------------------------------------------------- */
+
+@media screen and (max-width: 920px) {
+
+.best::before, .tripadvisor::before,
+    .michelin::after, .tripadvisor::after{
+        content: none;
+    }
+
+    .michelin, .fifty, .tripadvisor, .best {
+        height: 148px;
+    }
+
+    .awards {
+        flex-flow: column;
+        margin-bottom:100px;
+    }
+
+    .awards-icons {
+        margin-top: 0px;
+    }
+
+    .text-awards p:last-child {
+        margin-left:0;
+    }
+
+    .clients-opinion-part {
+        height: 100%;
+        width:100%;
+    }
+
+    .opinion-image {
+        background-size: cover;
+    }
+
+    .texts-clients{
+        margin-top:80px;
+    }
+
+    .description-opinion-client {
+        margin-top: 80px;
+    }
+
+    .description-opinion-client {
+    padding: 0 80px;
+    margin-top: 80px;
+    margin-top:0px;
+    }
+
+
+    .texts-clients P:last-child {
+    margin-left: 276px;
+}
+
+.clients-opinion-part:first-child {
+    order:2;
+}
+
+    .clients-opinion {
+        flex-flow: column;
+        height:100vh;
+    }
+
+    .stars-container {
+        height: 15%;
+    }
+
+    .dots-slider {
+        margin-top: 12px;
+        margin-bottom:12px;
+    }
+
+    .texts-clients {
+        margin-top: 0px;
+    }
+
+    .right p:first-child, .left{
+        margin-top: 30px;
+    }
+
+    .chef-quote-container {
+        margin-top: 100px;
+    }
+
+    .chef-quote-container {
+        height: 60vh;
+    }
+
+    .chef-quote-container {
+        height: 100vh;
+        margin-bottom:-100px;
+    }
+
+    .clients-opinion-container {
+        margin-top:122px;
+    }
+
+    .chef-quote-container {
+        height: 100vh;
+        margin-bottom:-120px;
+        margin-top:120px;
+    }
+
+}
+
+
+@media screen and (max-width: 870px) {
+
+    .chef{
+        flex-flow: column;
+        margin-bottom:-200px;
+    }
+
+    .chef-image {
+        background-position: center 20%;
+        
+    }
+
+    .chef-container{
+        width:100%;
+        height:100vh;
+    }
+    
+    .chef-part:last-child{
+        order:2;
+    }
+
+    .chef-part:first-child{
+        padding:30px 0px;
+        box-sizing: border-box;
+    }
+
+    
+}
+
+@media screen and (max-width: 650px){
+    
+    .team {
+        flex-direction: column;
+    }
+
+    .person-container {
+        min-width: 100%; 
+        margin-bottom: 150px;
+        height: auto;
+    }
+
+    .team {
+        height: 400vh;
+    }
+
+    .person-container:last-child {
+        margin-bottom: 50px;
+    }
+
+    .team h1 {
+        text-align: center;
+    }
+
+    .left p:last-child, .left p:first-child, .right p:last-child, .right p:first-child{
+         margin:0px;
+    }
+
+    .right, .left{
+        margin:0px;
+    }
+
+    .right{
+        margin-top:20px;
+    }
+
+    .chef-quote-text {
+        flex-flow: column;
+        padding:0px 80px;
+    }
+
+   .right p:last-child, .right p:first-child {
+    text-shadow: 2px 3px 5px rgba(255, 255, 255, 1);
+    }
+
+    .right p:last-child{
+        margin-top:20px;
+    }
+
+    .dots-slider {
+        margin-bottom: 25px;
+    }
+
+
+    .texts-clients P:last-child {
+        margin-left:0px;
+        text-align: center;
+        }
+    
+        .clients-title{
+            margin-bottom:20px;
+        }
+    
+        .clients-opinion {
+            height: 125vh;
+        }
+
+    
+
+}
+
+@media screen and (max-width: 400px){
+
+    .dot {
+        height: 5px;
+    }
+
+    .chef-container {
+        width: 100%;
+        height: 150vh;
+    }
+
+    .right p:last-child {
+        display:none;
+    }
+}

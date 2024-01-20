@@ -1,0 +1,759 @@
+/* -------------------------------------------------------------- */
+/* ----------------------HERO SECTION----------------------- -----*/
+/* -------------------------------------------------------------- */
+ 
+.nav-links li:nth-child(3){
+    font-weight: 600;
+    
+}
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+}
+
+
+.slogan-hero a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: right;
+    
+}
+
+.logo-container img{
+    width:20%;
+}
+
+.hero-container{
+    height:100vh;
+}
+
+.hero{
+    box-sizing: border-box;
+    width:100%;
+    height:70%;
+
+
+    background-image: url("../assets/photos/3575.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.nav-part {
+    flex: 1;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-links{
+    font-size: clamp(1rem, 0.9583rem + 0.1389vw, 1.125rem);
+    line-height: 2rem;
+}
+
+.logo-container{
+    flex:1;
+
+    height: 50px;
+    background-image: url("../assets/photos/logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-hero{
+    height:30%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin-bottom: -70px;
+    margin-left: -40px;
+}
+
+.texts P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-left:40px;
+}
+
+.button-reservation:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #9468006c;
+}
+
+.nav-links a:hover{
+    transition: 0.3s;
+    color: rgb(253, 253, 239);
+    text-decoration: underline;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------EXPENSIVE DISHES-------------------------*/
+/* -------------------------------------------------------------- */
+
+
+.beef-container{
+    width:100%;
+    height:80vh;
+}
+
+.beef{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.beef-part{
+    flex:1;
+}
+
+.beef-part:first-child{
+    order:1;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.beef-part:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:-15px;
+}
+
+.beef-part:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.beef-part:first-child h1, .beef-part:first-child p{
+    padding: 0 80px;
+}
+
+.beef-part:first-child span{
+    font-weight: 600;
+}
+
+.beef-image{
+    height:100%;
+
+    background-image: url("../assets/photos/kobe.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* fugu */
+
+.fugu-container{
+    width:100%;
+    height:80vh;
+}
+
+.fugu{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.fugu-part{
+    flex:1;
+}
+
+.fugu-part:first-child{
+    box-sizing: border-box;
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.fugu-part:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:-15px;
+}
+
+.fugu-part:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.fugu-part:first-child h1, .fugu-part:first-child p{
+    padding: 0 80px;
+}
+
+.fugu-part:first-child span{
+    font-weight: 600;
+}
+
+.fugu-image{
+    height:100%;
+
+    background-image: url("../assets/photos/fugu.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------MENU-------------------------------------*/
+/* -------------------------------------------------------------- */
+
+.menu-container{
+    height: 460vh;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.title-menu{
+    background-color: var(--yellow);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-menu h1{
+    color: black;
+    text-transform: uppercase;
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-part {
+    flex: 1;
+}
+
+.menu-part:first-child{
+    height:420vh;
+    padding:0 80px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.menu-part:first-child::after{
+    content: "";
+    position: absolute;
+    border-right:1px solid white;
+    right: 0;
+    top: 80px;
+    height:95%;
+    bottom: 80px;
+}
+
+.menu-part:last-child{
+    padding:0 80px;
+    box-sizing: border-box;
+}
+
+/* sushi */
+
+.sushi-menu h1, .other-menu h1{
+    font-size: var(--sizeTitle);
+    text-align: center;
+    font-family: var(--oswald);
+    text-transform: uppercase;
+}
+
+.sushi-intro, .other-menu-intro{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-top: 50px;
+}
+
+.sushi-intro-pic{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/urumaki.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sushi-intro-pic-maki{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/maki.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sushi-intro-pic-niguiri{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/niguiri.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.sushi-intro-pic-special{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/sushis.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+
+.sushi-intro p, .other-menu-intro p{
+    font-size: var(--normalSize);
+    margin:0px;
+}
+
+.title-sushi-intro, .title-other-intro {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sushi-intro p:last-child, .other-menu-intro p:last-child{
+    font-size: clamp(0.875rem, 0.8333rem + 0.1389vw, 1rem);
+}
+
+.item-sushi, .item-other{
+    font-size: var(--normalSize);
+    margin-top: 40px;
+
+}
+
+.title-sushi, .title-other{
+    font-weight: 600;
+}
+
+.item-sushi p, .item-other {
+    margin: 3px;
+}
+
+.other-menu-intro {
+    margin-bottom: 20px;
+}
+
+.description-sushi, .description-other {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    flex-wrap: nowrap;
+}
+
+.dotted-line{
+    border-bottom: 2px dotted #ffffff;
+    flex: 1;
+    margin-top: 3px; 
+}
+
+/*other menu*/
+
+.other-menu-intro-pic-sake{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/977.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.other-menu-intro-pic-dishes{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/beef.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.other-menu-intro-pic-dessert{
+    height: 100%;
+    width:100%;
+
+    background-image: url("../assets/photos/caviar.jpg");
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------SIGNATURE DISHES------------------ -----*/
+/* -------------------------------------------------------------- */
+
+.signature-dishes-container{
+    height:100vh;
+    width:100%;
+
+}
+
+.signature-dishes{
+    height:100%;
+    box-sizing: border-box;
+}
+
+
+.signature-dishes p:first-child{
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin-bottom: -70px;
+    margin-left: 80px;
+}
+
+.different-text{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-left:160px;
+}
+
+.signature-dishes-photos{
+    height:60%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signature-part{
+    height:100%;
+    flex:1;
+
+    box-sizing: border-box;
+}
+
+    .yakitori-photo{
+        height: 80%;
+        width:100%;
+
+        background-image: url("../assets/photos/3406.jpg");
+        background-color: black;
+        background-size: cover;
+        background-position: 80% 20%;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+
+        transition: all 1s ease 0s;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .yakitori-photo:hover {
+        transform: translate(0px, -10px);
+    }
+
+    .shrimp-photo:hover {
+        transform: translate(0px, -10px);
+    }
+
+    .ichiyu-photo:hover {
+        transform: translate(0px, -10px);
+    }
+
+    .yakitori-photo:hover:after {
+        content: "Bite-sized pieces of meat served on a bamboo skewer";
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        color: white;
+        opacity:1;
+    }
+
+
+
+    .shrimp-photo:hover:after {
+        content: "Soy sauce, ground ginger, lemon juice, and sesame seeds are combined with tender fresh shrimp.";
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        color: white;
+    }
+
+    .ichiyu-photo:hover:after {
+        content: "Bowl of steamed white rice, vegetables, soup, and three side dishes with amazing beef made in a very special way";
+        position: absolute;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        color: white;
+    }
+
+
+    .yakitori-photo:hover:before,
+    .shrimp-photo:hover:before,
+    .ichiyu-photo:hover:before {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.651);
+        z-index: -1;
+        opacity: 1;
+    }
+
+.signature-part:first-child p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.shrimp-photo{
+    height: 80%;
+    width:100%;
+
+    background-image: url("../assets/photos/3561.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+    transition: all 1s ease 0s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.ichiyu-photo{
+    height: 80%;
+    width:100%;
+
+    background-image: url("../assets/photos/soup-meal.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: 80% 20%;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+
+    transition: all 1s ease 0s;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.signature-part p{
+    text-align: center;
+    font-weight: 600;
+}
+
+.signature-part:nth-child(2){
+    margin-top:200px;
+}
+
+.menu-container,
+.signature-dishes-container {
+    box-sizing: border-box;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------PHOTO---------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.food-fixed-photo-container {
+    height: 100vh;
+    width: 100%;
+
+    margin: 160px 0px;
+}
+
+.food-fixed-photo {
+    height: 100%;
+    background-color: black;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: url("../assets/photos/kobeweb.jpg");
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------MEDIA QUERIES---------------------- -----*/
+/* -------------------------------------------------------------- */
+
+
+@media screen and (max-width: 870px) {
+
+    .beef, .fugu{
+        flex-flow: column;
+        margin-bottom:-200px;
+    }
+
+
+    .beef-container, .fugu-container{
+        width:100%;        height:100vh;
+    }
+    
+    
+    .beef-part:last-child, .fugu-part:last-child{
+        order:2;
+    }
+
+    .beef-part:first-child, .fugu-part:first-child{
+        padding:30px 0px;
+        box-sizing: border-box;
+    }
+
+    .shrimp-photo, .ichiyu-photo{
+        background-position: center center;
+    
+    }
+
+    .yakitori-photo{
+        background-position: 80% center;
+    }
+
+    .menu{
+        flex-flow: column;
+    }
+
+    .menu-container{
+        height:710vh;
+    }
+
+    .menu-part:last-child{
+        margin-top:80px;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 650px){
+    
+    .signature-dishes-photos {
+        flex-flow: column;
+        height:100%;
+    }
+
+    .signature-part:nth-child(2), .signature-part:last-child{
+        margin-top: 50px;
+    }
+
+    .signature-dishes-container {
+        height: 200vh;
+    }
+
+    .img-arrow {
+        margin-top: 200px;
+    }
+
+    .yakitori-photo {
+        height: 80%;
+    }
+
+    .signature-part {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    
+    .different-text, .signature-dishes p:first-child{
+        text-align: center;
+        margin-left:0px;
+    }
+
+    .menu-part:first-child, .menu-part:last-child{
+        padding: 0 40px;
+    }
+
+
+}
+
+@media screen and (max-width: 400px){
+    
+    .beef-container, .fugu-container {
+        height: 150vh;
+    }
+
+}
+
+
+
+@media screen and (max-width: 360px){
+    
+    .food-fixed-photo-container{
+        margin-top:250px;
+        margin-bottom:80px;
+    }
+
+}
+
+
+

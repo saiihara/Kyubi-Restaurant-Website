@@ -1,0 +1,1158 @@
+:root {
+    --calendar-bg-color: #191717;
+    --calendar-font-color: #FFF;
+    --weekdays-border-bottom-color: #404040;
+    --calendar-date-hover-color: #505050;
+    --calendar-current-date-color: #1b1f21;
+    --calendar-today-color: #24002A;
+    --calendar-today-innerborder-color: transparent;
+    --calendar-nextprev-bg-color: transparent;
+    --next-prev-arrow-color : #FFF;
+    --calendar-border-radius: 3px;
+    --calendar-prevnext-date-color: #484848
+}
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------HERO SECTION----------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.nav-links li:nth-child(4){
+    font-weight: 600;
+    
+}
+
+.navbar-container {
+    display: flex;
+    position: relative;
+    height: 50px;
+}
+
+
+.slogan-hero a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color:var(--yellow);
+}
+
+.nav-links li{
+    list-style: none;
+    text-align: right;
+    
+}
+
+.logo-container img{
+    width:20%;
+}
+
+.hero-container{
+    height:100vh;
+}
+
+.hero{
+    box-sizing: border-box;
+    width:100%;
+    height:70%;
+
+
+    background-image: url("../assets/photos/square-sush.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position:40% 60%;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.nav-part {
+    flex: 1;
+}
+
+.nav-links ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+.nav-links{
+    font-size: clamp(1rem, 0.9583rem + 0.1389vw, 1.125rem);
+    line-height: 2rem;
+}
+
+.logo-container{
+    flex:1;
+
+    height: 50px;
+    background-image: url("../assets/photos/logo.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-hero{
+    height:30%;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texts p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin-bottom: -70px;
+    margin-left: -40px;
+}
+
+.texts P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin-left:90px;
+}
+
+.button-reservation:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #9468006c;
+}
+
+.nav-links a:hover{
+    transition: 0.3s;
+    color: rgb(253, 253, 239);
+    text-decoration: underline;
+}
+
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------ETIQUETTE-------------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.etiquette-container{
+    width:100%;
+    height:80vh;
+}
+
+.etiquette{
+    height:100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.etiquette-part{
+    flex:1;
+}
+
+.etiquette-part:first-child{
+    order:1;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.etiquette-part:first-child h1{
+    color: var(--yellow);
+    text-transform: uppercase;
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    letter-spacing: 0.1rem;
+    white-space: nowrap;
+    margin-bottom:-15px;
+}
+
+.etiquette-part:first-child p{
+    font-size: var(--normalSize);
+    font-weight: 300;
+    margin-top:-10px;
+    margin-top:10px;
+}
+
+.etiquette-part:first-child h1, .etiquette-part:first-child p{
+    padding: 0 80px;
+}
+
+.etiquette-part:first-child span{
+    font-weight: 600;
+}
+
+.etiquette-image{
+    height:100%;
+
+    background-image: url("../assets/photos/restaurant.jpg");
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.etiquette-part p:last-child{
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------RESERVATION------------------------------*/
+/* -------------------------------------------------------------- */
+
+.reservation-container{
+    height:180vh;
+    width:100%;
+}
+
+.reservation{
+    width:100%;
+    height:100%;
+
+    box-sizing: border-box;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-part{
+    flex:1;
+    height:100%;
+    width:100%;
+}
+
+.reservation-photos{
+    min-height:80%;
+    margin:80px;
+    box-sizing: border-box;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.photo-res{
+    flex:1;
+
+    min-width:90%;
+    height:100%;
+
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    transition: all 1s ease 0s;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-res:hover {
+    transform: translateX(-10px);
+}
+
+.photo-res:nth-child(2):hover {
+    transform: translateX(10px);
+}
+
+.photo-res:first-of-type:hover:before {
+    content: "Indulge in the exquisite flavors of the ocean, as a big plate of sushi offers a delightful symphony of taste sensations.";
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%); 
+}
+
+.photo-res:nth-child(2):hover:before {
+    content: "Japanese dish consisting of fresh oysters coated in flour, egg, and Panko breadcrumbs, deep-fried until golden brown";
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%); 
+}
+
+.photo-res:nth-child(3):hover:before {
+    content: "Dumplings served with a tangy soy-based dipping sauce, these offer a delicious blend of textures and tastes.";
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    text-align: center;
+    color: white;
+    transform: translate(-50%, -50%); 
+}
+
+.photo-res:first-of-type:hover:after, .photo-res:nth-of-type(2):hover:after, .photo-res:nth-of-type(3):hover:after {
+        content: ""; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.651);
+        z-index: -1; 
+    }
+
+.photo-res:first-child{
+    background-image: url("../assets/photos/lottasushi.jpg");
+    margin-top:80px;
+}
+
+.photo-res:nth-child(2){
+    margin-left:160px;
+    background-image: url("../assets/photos/ostras.jpg");
+}
+
+.photo-res:last-child{
+    background-image: url("../assets/photos/3707.jpg");
+}
+
+.reservation-part:last-child{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-content{
+    margin:80px;
+    border:1px solid var(--yellow);
+}
+
+.reservation-container h1{
+    font-family: var(--oswald);
+    font-size: var(--sizeTitle);
+    color: var(--yellow);
+    margin-left:80px;
+    margin-top:80px;
+    text-transform: uppercase;
+}
+
+.reservation-container p{
+    font-size: var(--normalSize);
+    margin-left:80px;
+    margin-top:-40px;
+}
+
+/* //form */
+
+
+form{
+    height:100%;
+    padding:80px;
+    box-sizing: border-box;
+}
+
+.icon{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/paper.png");
+}
+
+.icon-person{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/person.png");
+}
+
+.icon-map{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/calendar.png");
+}
+
+
+/* CALENDAR------------------------------ */
+
+.calendar{
+    width:100%;
+    height:100%;
+}
+
+.special-day {
+    background-color: #39311D; 
+    color: white;
+}
+
+.special-day {
+    background-color: #39311D; 
+    color: white;
+}
+
+.calendar {
+    position: relative;
+    max-width: 400px; 
+    min-width: 320px;
+    background: var(--calendar-bg-color);
+    color: var(--calendar-font-color);
+    margin: 20px auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-weight: normal;
+    border-radius: var(--calendar-border-radius);
+}
+
+.calendar-inner {
+    padding: 10px 10px;
+}
+
+.calendar .calendar-inner .calendar-body {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+}
+
+.calendar .calendar-inner .calendar-body div {
+    padding: 4px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 1px solid transparent;
+    margin: 10px 2px 0px;
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7) {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div:nth-child(-n+7):hover {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--weekdays-border-bottom-color);
+}
+
+.calendar .calendar-inner .calendar-body div>a {
+    color: var(--calendar-font-color);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+.calendar .calendar-inner .calendar-body div:hover {
+    border: 1px solid var(--calendar-date-hover-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body div.empty-dates:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-controls {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.calendar .calendar-inner .calendar-today-date {
+    display: grid;
+    text-align: center;
+    cursor: pointer;
+    margin: 3px 0px;
+    background: var(--calendar-current-date-color);
+    padding: 8px 0px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month {
+    display: flex;
+    min-width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next {
+    text-align: right;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-year-label,
+.calendar .calendar-inner .calendar-controls .calendar-year-month .calendar-month-label {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today {
+    background: var(--calendar-today-color);
+    border-radius: 4px;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today:hover {
+    border: 1px solid transparent;
+}
+
+.calendar .calendar-inner .calendar-body .calendar-today a {
+    outline: 2px solid var(--calendar-today-innerborder-color);
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a,
+.calendar .calendar-inner .calendar-controls .calendar-prev a {
+    color: var(--calendar-font-color);
+    font-family: arial, consolas, sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: 4px 12px;
+    display: inline-block;
+    background: var(--calendar-nextprev-bg-color);
+    margin: 10px 0 10px 0;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg {
+    height: 20px;
+    width: 20px;
+}
+
+.calendar .calendar-inner .calendar-controls .calendar-next a svg path,
+.calendar .calendar-inner .calendar-controls .calendar-prev a svg path{
+    fill: var(--next-prev-arrow-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates,
+.calendar .calendar-inner .calendar-body .next-dates {
+    color: var(--calendar-prevnext-date-color);
+}
+
+.calendar .calendar-inner .calendar-body .prev-dates:hover,
+.calendar .calendar-inner .calendar-body .next-dates:hover {
+  border: 1px solid transparent;
+  pointer-events: none;
+}
+
+
+
+/* ---------------------------------------------------------------- */
+
+
+.days {
+    display: flex;
+    margin-top:40px;
+}
+
+.unavailable-days, .current-days {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.color {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px; 
+}
+
+.unavailable {
+    background-color: #39311D;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.current {
+    margin-left:5px;
+    background-color: #24002A;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.text {
+    white-space: nowrap;
+}
+
+
+.text-form{
+    display:flex;
+    align-items: center;
+}
+
+.form-part{
+    margin-top:10px;
+    display:flex;
+    align-items: center;
+    flex-flow:column nowrap;
+}
+
+.form-part:nth-child(2), .form-part:nth-child(3) {
+    margin-top:40px;
+}
+
+.input, input{
+    display:flex;
+    justify-content: center;
+    width:90%;
+}
+
+input[type="text"], input[type="number"]{
+    background: transparent;
+    border:0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding:5px;
+    color:white;
+    font-family: Montserrat, sans-serif;
+}
+
+input[type="text"]:focus, input[type="number"]:focus{
+    outline:none;
+    border-bottom: 2px solid rgb(143, 69, 0);
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    padding:20px 0;
+    width:100%;
+    margin-top:40px;
+    font-size: var(--normalSize);
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--yellow) ;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color:  rgb(203, 138, 77);
+    transition: 0.3s;
+}
+
+.reservartion-form{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------NOTES------------------------------ -----*/
+/* -------------------------------------------------------------- */
+
+.reservation-notes{
+    padding:80px;
+
+    font-size: var(--normalSize);
+}
+
+.reservation-notes span{
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------COSTUMER SERVICE------------------- -----*/
+/* -------------------------------------------------------------- */
+
+.costumer-service-container{
+    height:80vh;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.costumer-service{
+    width:100%;
+    height:100%;
+
+    display:flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.costumer-service-part{
+    flex:1;
+}
+
+.costumer-form{
+    width:100%;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.icon-costumer{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/paper.png");
+}
+
+.icon-costumer-tfn{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/tlf.png");
+}
+
+.icon-costumer-matter{
+    min-width:25px;
+    min-height:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/text.png");
+}
+
+
+.costumer-service-part:first-child{
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+} 
+
+.text-costumer{
+    display:flex;
+    flex-flow: column;
+    align-items: center;
+
+    padding:80px;
+    font-size: var(--normalSize);
+}
+
+.description-costumer{
+    margin-top:20px;
+}
+
+.texts-costumer p:first-child {
+    font-size: clamp(1.875rem, 1.5rem + 1.25vw, 3rem);
+    margin:0;
+    margin-right:20px;
+}
+
+.texts-costumer P:last-child{
+    font-size: clamp(3.4375rem, 3.3333rem + 0.3472vw, 3.75rem);
+    font-family: 'Japan-wave';
+    color: var(--yellow);
+    margin:0;
+    margin-left:40px;
+    margin-top:-10px;
+}
+
+.description-costumer span{
+    font-weight: 600;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------CONTACT SERVICE--------------------------*/
+/* -------------------------------------------------------------- */
+
+.ways-contact-container{
+    height:40vh;
+    width:100%;
+}
+
+.ways-contact{
+    height:100%;
+    width:100%;
+
+    display:flex;
+}
+.row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.row-photo-tfn{
+    height:25px;
+    width:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/tlf.png");
+    margin-bottom:10px;
+}
+
+.row-photo-mail{
+    height:25px;
+    width:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/email.png");
+    margin-bottom:10px;
+}
+
+.row-photo-location{
+    height:25px;
+    width:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/map.png");
+    margin-bottom:10px;
+}
+
+.row-photo-direction{
+    height:25px;
+    width:25px;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right:10px;
+
+    background-image: url("../assets/photos/postal.png");
+    margin-bottom:10px;
+}
+
+
+.row-text:nth-child(2){
+    margin-bottom:10px;
+}
+
+
+.ways-contact-part{
+    flex:1;
+}
+
+.ways-contact-part:nth-child(2){
+    height:100%;
+    width:100%;
+
+    background-color: black;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    background-image: url("../assets/photos/sushiClose-min.jpg");
+}
+
+.ways-contact-part:first-child, .ways-contact-part:last-child{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    
+    margin: 0 auto;
+    font-size: var(--normalSize);
+}
+/* -------------------------------------------------------------- */
+/* ----------------------OPENING HOURS------------------------------*/
+/* -------------------------------------------------------------- */
+
+.schedule-container{
+    margin:80px 0;
+    height:100vh;
+    width:100%;
+}
+
+.schedule{
+    height:100%;
+
+    background-color: black;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    background-image: url("../assets/photos/muchosushi.jpg");
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule-part{
+    .schedule-part {
+        flex: 1 0 60%;
+    }
+}
+
+.schedule-text{
+    background-color: white;
+    color:black;
+    padding:80px;
+}
+
+.schedule-text p{
+    margin:0;
+    margin-top:10px;
+    font-size: var(--normalSize);
+}
+
+.schedule h1{
+    font-size: var(--sizeTitle);
+    font-family: var(--oswald);
+    text-transform: uppercase;
+    margin:0;
+}
+
+.schedule-text span{
+    font-weight: 600;
+}
+/* -------------------------------------------------------------- */
+/* ----------------------MAP--------------------------*/
+/* -------------------------------------------------------------- */
+
+.iframe-container {
+    position:relative;
+    max-width:100%;
+    min-width:500px;
+    padding-bottom: 500px;
+    overflow:hidden;
+
+    margin:80px 0;
+}
+
+.map-iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    max-height: 100%;
+    border:0;
+     overflow:hidden;
+}
+
+/* -------------------------------------------------------------- */
+/* ----------------------MEDIA QUERIES---------------------- -----*/
+/* -------------------------------------------------------------- */
+
+@media screen and (max-width: 1205px){
+
+    .texts-costumer P:last-child {
+        margin-left: 0; 
+        margin-top: 0; 
+        white-space: nowrap;
+    }
+
+}
+
+
+@media screen and (max-width: 1050px){
+
+    .photo-res:nth-child(2):hover:after {
+        padding-top:30%;
+    }
+
+    .photo-res:nth-child(1):hover:after {
+        padding-top:30%;
+    }
+
+    .photo-res:nth-child(3):hover:after {
+        padding-top:30%;
+    }
+
+
+    .reservation-container{
+        height:250vh;
+    }
+
+    .reservation{
+        flex-flow: column;
+    }
+
+    .reservation-part:first-child{
+        order:2;
+    }
+
+    .reservation-photos {
+        min-height: 100%;
+    }
+
+    .photo-res:first-child {
+        margin-top:0;
+    }
+
+    .reservation-notes{
+        margin-top:260px;
+    }
+
+    .row-photo-mail{
+        margin-left:40px;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+    .costumer-service-part:first-child {
+        width:40%;
+    }
+
+    .costumer-service-part:last-child {
+        width:60%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 870px) {
+
+
+    .costumer-service-part:first-child {
+        width:80%;
+    }
+
+    .costumer-service-part:last-child {
+        width:80%;
+    }
+
+    .ways-contact-container{
+        margin:50px 0;
+    }
+
+    .costumer-service{
+        margin:50px 0;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-costumer, .costumer-form{
+        padding:0;
+    }
+
+    .texts-costumer{
+        text-align: center;
+    }
+
+    .text-form .input input{
+        width:100%;
+    }
+
+ /*************************/
+
+    .etiquette{
+        flex-flow: column;
+    }
+
+
+    .etiquette-container{
+        width:100%;
+        height:100vh;
+    }
+    
+    
+    .etiquette-part:first-child{
+        order:1;
+        box-sizing: border-box;
+        padding: 30px 0px
+    }
+
+    .etiquette-part:nth-child(2){
+        order:2;
+    }
+
+
+    /*************************/
+
+    .reservation-part:first-child {
+        display:none;
+     }
+
+    .reservation-container{
+        height:150vh;
+    }
+
+    .reservation-notes {
+        margin-top: 80px;
+    }
+
+    .ways-contact-part:nth-child(2){
+        display:none;
+    }
+
+    .row-photo-mail{
+        margin-left:0;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .reservation-content {
+        border:0;
+    }
+
+    .reservation-container{
+        height:120vh;
+    }
+
+    .ways-contact{
+        flex-flow: column;
+    }
+
+    .ways-contact-container{
+        margin-top:80px;
+    }
+
+    .texts P:last-child {
+         margin-left: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 400px){
+
+    .texts-costumer P:last-child {
+        white-space: wrap;
+    }
+
+    .etiquette-container {
+        height: 150vh;
+    }
+
+    .description-costumer {
+        margin:40px 0;
+    }
+
+    .reservation-notes {
+        margin-top: 80px;
+        margin-bottom:80px;
+    }
+
+}
